@@ -4,37 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>Currency Converter by using APIs</title>
     <link rel="stylesheet" href="css.css">
 </head>
 <body>
         <div class="Container">
-            <label>Amount</label></p>
-            <input type="text" name="" id="amount"></p>
-        </div>
-        <div class="from">
-   <label >From</label></p>
-   <select name="" id="from">
-    <option value="USD">USD</option>
-    <option value="RWF">RWF</option>
-    <option value="EUR">EUR</option>
-    <option value="CAD">CAD</option>
-    <option value="JPY">JPY</option>
-    <option value="POU">POU</option>
-    <option value="ArgentinePeso"> ArgentinePeso	        </option>
-    <option value="AustralianDollar"> AustralianDollar   </option>
-    <option value="BahrainiDinar"> BahrainiDinar	   </option>
-    <option value="BotswanaPula"> BotswanaPula	   </option>
-    <option value="BrazilianReal"> BrazilianReal	   </option>
-    <option value="BritishPound"> BritishPound	   </option>
-    <option value="BruneianDollar"> BruneianDollar     </option>
-    <option value="BulgarianLev"> BulgarianLev       </option>
-    <option value="CanadianDollar"> CanadianDollar     </option>
-    <option value="ChileanPeso"> ChileanPeso        </option>
+            <div>
+                <label>Amount</label></p>
+                <input type="text" name="" id="amount"></p>
+            </div>
+            <div class="from">
+                <label >From</label></p>
+                <select name="" id="from">
+                    <option value="hidden">from</option>
+                    <option value="USD">USD</option>
+                    <option value="RWF">RWF</option>
+                    <option value="EUR">EUR</option>
+                    <option value="CAD">CAD</option>
+                    <option value="JPY">JPY</option>
+                    <option value="POU">POU</option>
+    <option value="CDF">Congolese Franc</option>
+    <option value="AustralianDollar"> AustralianDollar</option>
+    <option value="BahrainiDinar"> BahrainiDinar</option>
+    <option value="BotswanaPula"> BotswanaPula</option>
+    <option value="BrazilianReal"> BrazilianReal</option>
+    <option value="BritishPound"> BritishPound</option>
+    <option value="BruneianDollar"> BruneianDollar</option>
+    <option value="BulgarianLev"> BulgarianLev</option>
+    <option value="CanadianDollar"> CanadianDollar</option>
+    <option value="ChileanPeso"> ChileanPeso</option>
     <option value="ChineseYuanRenminbi"> ChineseYuanRenminbi</option>
-    <option value="ColombianPeso"> ColombianPeso	   </option>
-    <option value="CzechKoruna"> CzechKoruna	        </option>     
-    <option value="DanishKrone"> DanishKrone	       </option>
+    <option value="ColombianPeso"> ColombianPes</option>
+    <option value="CzechKoruna"> CzechKorun</option>     
+    <option value="DanishKrone"> DanishKron</option>
     <option value="EmiratiDirham"> EmiratiDirham	   </option>
     <option value="HongKongDollar"> HongKongDollar     </option>
     <option value="HungarianForint"> HungarianForint    </option>
@@ -51,12 +53,14 @@
 <div class="to">
    <label >To</label></p>
    <select name="" id="to">
-    <option value="RWF">RWF</option>
-    <option value="USD">USD</option>
-    <option value="EUR">EUR</option>
+       <option value="hidden">To</option>
+       <option value="RWF">RWF</option>
+       <option value="USD">USD</option>
+       <option value="EUR">EUR</option>
     <option value="CAD">CAD</option>
     <option value="JPY">JPY</option>
     <option value="POU">POU</option>
+    <option value="CDF">Congolese Franc</option>
     <option value="ArgentinePeso"> ArgentinePeso	        </option>
     <option value="AustralianDollar"> AustralianDollar   </option>
     <option value="BahrainiDinar"> BahrainiDinar	   </option>
@@ -85,10 +89,13 @@
 </select>
 </div>
 </div>
-<input type="button" value="convert" class="btn" onclick="convert()">
+<div>
+    <input type="button" value="convert" class="btn" onclick="convert()">
+</div>
 <div class="result">
-<label for="">Result</label></p>
-<label for="" id="result"></label>
+    <label for="">Result</label></p>
+    <label for="" id="result"></label>
+</div>
 </div>
 </div>
  <script src="js.js"></script> 

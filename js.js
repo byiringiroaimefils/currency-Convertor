@@ -1,12 +1,15 @@
 function convert() {
+  // Selecting user's data from index.html file
+
   let amount = parseFloat(document.getElementById("amount").value);
   let From = document.getElementById("from").value;
   let To = document.getElementById("to").value;
   const Result = document.getElementById("result");
 
+  // We're going to fetch currencies from this api and date by using the following function
+  
   var myHeaders = new Headers();
   myHeaders.append("apikey", "BRxBMFWl1Xa51rQrkIXQvZvWBw0Koc3X");
-
   var requestOptions = {
     method: "GET",
     redirect: "follow",
@@ -23,10 +26,10 @@ function convert() {
     requestOptions
   )
     .then((response) => response.json())
-    .then(json => 
-    Result.innerHTML=json.result
-    )
+    .then((json) => (Result.innerHTML = json.result))
     .catch((error) => console.log("error", error));
+
+  // Here you can use this code while you want to converter your currency without using Api
 
   //   let exchange = {
   //     USD: 1,
